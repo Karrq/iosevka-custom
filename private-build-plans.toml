@@ -1,0 +1,59 @@
+[buildPlans.iosevka-karrq-term]
+family = "Iosevka Karrq Term"
+spacing = "term"
+serifs = "sans"
+no-cv-ss = true
+
+  [buildPlans.iosevka-karrq-term.variants]
+  inherits = "ss02"
+
+    [buildPlans.iosevka-karrq-term.variants.design]
+    capital-c = "serifless"
+    capital-g = "toothless-corner-serifless-hooked"
+    capital-s = "serifless"
+    capital-x = "curly-serifless"
+    capital-y = "curly-serifless"
+    capital-z = "straight-serifless"
+    d = "toothed-serifless"
+    i = "serifed"
+    r = "serifed"
+    x = "straight-serifless"
+    zero = "slashed"
+    two = "straight-neck"
+    asterisk = "hex-low"
+    percent = "rings-continuous-slash"
+    lig-ltgteq = "flat"
+    ascii-single-quote = "straight"
+
+  [buildPlans.iosevka-karrq-term.ligations]
+  inherits = "dlig" 
+
+[buildPlans.iosevka-karrq]
+family = "Iosevka Karrq"
+spacing = "normal"
+serifs = "sans"
+no-cv-ss = true
+
+  [buildPlans.iosevka-karrq.variants]
+  inherits = "ss02"
+
+    [buildPlans.iosevka-karrq.variants.design]
+    capital-c = "serifless"
+    capital-g = "toothless-corner-serifless-hooked"
+    capital-s = "serifless"
+    capital-x = "curly-serifless"
+    capital-y = "curly-serifless"
+    capital-z = "straight-serifless"
+    d = "toothed-serifless"
+    i = "serifed"
+    r = "serifed"
+    x = "straight-serifless"
+    zero = "slashed"
+    two = "straight-neck"
+    asterisk = "hex-low"
+    percent = "rings-continuous-slash"
+    lig-ltgteq = "flat"
+    ascii-single-quote = "straight"
+
+  [buildPlans.iosevka-karrq.ligations]
+  inherits = "dlig"
