@@ -22,13 +22,14 @@ prepare() {
 }
 
 build() {
-	cd "$srcdir/iosevka"
-	npm install
-	npm run build -- ttf::iosevka-karrq
-	npm run build -- ttf::iosevka-karrq-term
+    cd "$srcdir/iosevka"
+    npm install
+    npm run build -- ttf::iosevka-karrq
+    npm run build -- ttf::iosevka-karrq-term
 }
 
 package() {
-	install -D -m644 "${srcdir}/iosevka/dist/*/ttf/*.ttf" "${pkgdir}/usr/share/fonts/TTF/"
-	install -D -m644 "${srcdir}/iosevka/LICENSE.md" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.md"
+    install -d "${pkgdir}/usr/share/fonts/TTF"
+    install -m644 ${srcdir}/iosevka/dist/*/ttf/*.ttf "${pkgdir}/usr/share/fonts/TTF/"
+    install -D -m644 "${srcdir}/iosevka/LICENSE.md" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.md"
 }
